@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int k;
+int i;
+int sum;
+
+int mul(int k)
+{
+  return k*i;
+}
+
+int main(void) 
+{
+  scanf("%d",&k);
+  for(i = 1; i<10; i++)
+    {
+      printf("%d * %d = %d\n", k, i, k*i);
+      sum += mul(k); 
+    }
+  printf("곱의 합: %d", sum);
+  return 0;
+}
