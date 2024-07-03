@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    float sum = 0.0, average;
+    
+    printf("배열 크기를 입력하세요: ");
+    scanf("%d", &n);
+    
+    float arr[n];
+    
+    printf("배열 요소를 입력하세요:\n");
+    for(i = 0; i < n; ++i) {
+        printf("arr[%d] = ", i);
+        scanf("%f", &arr[i]);
+        sum += arr[i];
+    }
+    
+    average = sum / n;
+    printf("배열의 평균: %.2f\n", average);
+    return 0;
+}
